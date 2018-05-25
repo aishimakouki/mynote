@@ -15,7 +15,7 @@ class NotesController < ApplicationController
 
   def note_params
      # ストロングパラメータはフォームで入力した内容を受け取る
-    params.require(:note).permit(:title, :body　：User_id)
+    params.require(:note).permit(:title, :body, :user_id)
   end
 
 end
