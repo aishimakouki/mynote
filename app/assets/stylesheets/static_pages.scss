@@ -1,17 +1,23 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-.home-image {
-  width: 100%;
+.home-bg {
   margin-top: -20px;
-}
-.home-back {
+  /* 背景画像を暗くしています */
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), image-url('lionello.jpg');
+  /* 背景全体に画像を表示します */
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+  top: 0;
+  left: 0;
   position: relative;
 }
-.home-back p {
+
+.home-bg p {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 35%;
+  left: 0;
+  right: 0;
+  margin: auto;
   color: white;
-  font-size: 50px;
+  font-size: 8vw;
+  text-align: center;
 }
